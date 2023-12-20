@@ -1,8 +1,25 @@
-body {
-   
-    background-image: url(winter-background.jpg);
+
+.background {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .background::before {
+    content: "";
+    background-image: url("winter-background.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-}
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Put it behind the content */
+  }
+
 
 
 header, footer {
@@ -13,50 +30,44 @@ header, footer {
     font-weight: bolder;
 }
 
-
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-
-
-
 h1, .div1 {
     font-family:'Berkshire Swash', serif;
 }
 
-
 h3, footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 
 #madLibOutput {
     padding: 10px;
     text-align: left;
 }
 
-
-
-
 p {
    color: white;
    font-size: 30px;
-
-
-
-
 }
-
-
-
 
 .div1 {
     background-color: transparent;
     backdrop-filter: blur(5px);
     border: 4px solid white;
+    border-radius: 4px;
 }
 
 
+.btncustom {
+    border: 4px solid white;
+    background-color: #4f9bffc2;
+}
+
+.btncustom:hover {
+    border: 4px solid #3fa9dac2;
+    background-color: rgba(255, 255, 255, 0.548);
+}
