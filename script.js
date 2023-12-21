@@ -1,6 +1,7 @@
 document.getElementById('generateMadLib').addEventListener('click', function () {
     let adjective = prompt('Enter an adjective');
     let noun = prompt('Enter a noun');
+    let pronoun = prompt('Enter a pronoun')
     let verb = prompt('Enter a verb');
     let adverb = prompt('Enter an adverb');
 

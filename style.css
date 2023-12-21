@@ -22,8 +22,13 @@
 
 
 
+header {
+    background-color: #b8b8b870;
+    backdrop-filter: blur(5px);
+}
+
+
 header, footer {
-    background-color: transparent;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -61,13 +66,30 @@ p {
     border-radius: 4px;
 }
 
-
 .btncustom {
-    border: 4px solid white;
-    background-color: #4f9bffc2;
+    border: 4px solid #4f9bffc2;
+    background-color: white;
+    color: #4f9bffc2;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .btncustom:hover {
-    border: 4px solid #3fa9dac2;
-    background-color: rgba(255, 255, 255, 0.548);
+    border: 4px solid white;
+    background-color: #4f9bffc2;
+    color: white;
+    font-weight: bold;
+}
+
+
+.btncustom:active {
+    border: 4px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.btncustom:link {
+    border: 4px solid white;
+    color: white;
+    font-weight: bold;
 }
